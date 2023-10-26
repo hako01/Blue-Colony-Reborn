@@ -41,6 +41,7 @@
 	faction = "City"
 	total_positions = 2
 	spawn_positions = 2
+	hard_whitelisted = 1
 	supervisors = "your laws and the AI"	//Nodrak
 	selection_color = "#254C25"
 	minimal_player_age = 1

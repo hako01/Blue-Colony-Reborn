@@ -4,7 +4,7 @@ var/global/list/robot_modules = list(
 	"Clerical" 		= /obj/item/weapon/robot_module/robot/clerical/general,
 	"Research" 		= /obj/item/weapon/robot_module/robot/research,
 	"Miner" 		= /obj/item/weapon/robot_module/robot/miner,
-	"Security"		= /obj/item/weapon/robot_module/robot/security,
+	"Security" 		= /obj/item/weapon/robot_module/robot/security/general,
 	"Crisis" 		= /obj/item/weapon/robot_module/robot/medical/crisis,
 	"Surgeon" 		= /obj/item/weapon/robot_module/robot/medical/surgeon,
 	"Engineering"	= /obj/item/weapon/robot_module/robot/engineering/general,
@@ -482,7 +482,7 @@ var/global/list/robot_modules = list(
 
 /obj/item/weapon/robot_module/robot/security
 	name = "security robot module"
-	channels = list("Security" = 1)
+	channels = list("Police" = 1)
 	networks = list(NETWORK_SECURITY)
 	subsystems = list(/mob/living/silicon/proc/subsystem_crew_monitor)
 	can_be_pushed = 0
@@ -509,6 +509,7 @@ var/global/list/robot_modules = list(
 /obj/item/weapon/robot_module/robot/security/general/New()
 	..()
 	src.modules += new /obj/item/weapon/handcuffs/cyborg(src)
+	src.modules += new /obj/item/weapon/pen/robopen(src)
 	src.modules += new /obj/item/weapon/melee/baton/robot(src)
 	src.modules += new /obj/item/weapon/gun/energy/taser/mounted/cyborg(src)
 	src.modules += new /obj/item/weapon/gun/energy/taser/xeno/sec/robot(src)

@@ -185,6 +185,15 @@
 
 	src << output
 
+/mob/living/carbon/human/proc/state_laws()
+	set name = "State laws"
+	set desc = "State your laws."
+	set category = "Special Verbs"
+
+	if(stat == DEAD) return
+
+
+
 /mob/living/carbon/human
 	var/next_sonar_ping = 0
 

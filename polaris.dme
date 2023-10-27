@@ -1542,6 +1542,7 @@
 #include "code\modules\client\preference_setup\general\05_body.dm"
 #include "code\modules\client\preference_setup\general\06_flavor.dm"
 #include "code\modules\client\preference_setup\general\07_economy.dm"
+#include "code\modules\client\preference_setup\general\08_laws.dm"
 #include "code\modules\client\preference_setup\global\01_ui.dm"
 #include "code\modules\client\preference_setup\global\02_settings.dm"
 #include "code\modules\client\preference_setup\global\03_pai.dm"

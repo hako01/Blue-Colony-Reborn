@@ -134,9 +134,9 @@ datum/preferences
 
 	var/list/body_markings = list() // "name" = "#rgbcolor"
 
+	var/list/synth_laws = list()
 	var/list/flavor_texts = list()
 	var/list/flavour_texts_robot = list()
-	var/list/synth_laws = list()
 
 	var/med_record = ""
 	var/sec_record = ""

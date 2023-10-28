@@ -76,6 +76,7 @@
 	var/real_name = null
 	var/nickname = null
 	var/flavor_text = ""
+	var/synth_laws = "" //Carbon
 	var/med_record = ""
 	var/sec_record = ""
 	var/gen_record = ""
